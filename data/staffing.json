@@ -1,0 +1,24 @@
+{
+  "siteTitle": "Staffing Whiteboard",
+  "shiftLabel": "Back Half Days (Blue)",
+  "lastUpdated": "2026-02-17",
+  "areas": [
+    { "id": "pick_pg", "name": "Pick Process Guide" },
+    { "id": "stow_pg", "name": "Stow Process Guide" },
+    { "id": "problem_solve", "name": "Problem Solver" },
+    { "id": "to_pick", "name": "To Pick" },
+    { "id": "to_stow", "name": "To Stow" },
+    { "id": "pick_transporter", "name": "Pick Transporter" },
+    { "id": "stow_transporter", "name": "Stow Transporter" }
+  ],
+  "associates": [
+    {
+      "id": "a_miguel",
+      "name": "Miguel Davalos",
+      "homeArea": "pick_pg",
+      "role": "Process Guide",
+      "badges": ["Pick PG", "Demora", "Safety"],
+      "status": "On Floor"
+    }
+  ]
+}
