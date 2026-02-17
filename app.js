@@ -39,26 +39,26 @@ function matchesFilters(assoc){
   return hay.includes(q);
 }
 
-/** Badge classification rules (simple + works with your current JSON) */
+/** Badge classification based on label text */
 function badgeClass(label){
   const b = norm(label);
 
-  // Leadership / roles
+  // Leadership
   if (b.includes("pg") || b.includes("pa") || b.includes("am") || b.includes("problem solver") || b === "ps") {
     return "leadership";
   }
 
-  // Certifications
+  // Certs
   if (b.includes("pit") || b.includes("tdr") || b.includes("hazmat") || b.includes("amnesty") || b.includes("safety")) {
     return "cert";
   }
 
-  // Flags / restrictions
-  if (b.includes("no") || b.includes("restrict") || b.includes("light duty") || b.includes("accom")) {
+  // Flags
+  if (b.includes("no ") || b.includes("restrict") || b.includes("light duty") || b.includes("accom")) {
     return "flag";
   }
 
-  // Default: skill/function
+  // Skills / functions
   return "skill";
 }
 
@@ -86,7 +86,7 @@ function renderKpis(data){
     { label: "To Pick", value: counts["to_pick"] || 0 },
     { label: "To Stow", value: counts["to_stow"] || 0 },
     { label: "Pick Transport", value: counts["pick_transporter"] || 0 },
-    { label: "Stow Transport", value: counts["stow_transporter"] || 0 },
+    { label: "Stow Transport", value: counts["stow_transporter"] || 0 }
   ];
 
   elKpis.innerHTML = kpiItems.map(k => `
