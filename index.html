@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Staffing Whiteboard</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="left">
+      <h1 id="title">Staffing Whiteboard</h1>
+      <div class="meta">
+        <span id="shift"></span>
+        <span class="dot">•</span>
+        <span id="updated"></span>
+      </div>
+    </div>
+
+    <div class="right">
+      <input id="search" type="text" placeholder="Search name, role, badge…" />
+      <button id="resetBtn" class="danger">Reset Layout</button>
+    </div>
+  </header>
+
+  <section class="kpis" id="kpis"></section>
+  <main class="grid" id="grid"></main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
