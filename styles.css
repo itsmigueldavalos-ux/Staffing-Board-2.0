@@ -1,0 +1,39 @@
+.badges{ margin-top:10px; display:flex; flex-wrap:wrap; gap:6px; }
+
+.badge{
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  background:#eef2ff;
+  color:#1e293b;
+}
+
+/* Leadership */
+.badge.leadership{
+  background:#ede9fe;
+  color:#5b21b6;
+  border-color:#c4b5fd;
+}
+
+/* Skills */
+.badge.skill{
+  background:#e0f2fe;
+  color:#075985;
+  border-color:#bae6fd;
+}
+
+/* Certifications */
+.badge.cert{
+  background:#ffedd5;
+  color:#9a3412;
+  border-color:#fed7aa;
+}
+
+/* Flags / Restrictions */
+.badge.flag{
+  background:#fee2e2;
+  color:#991b1b;
+  border-color:#fecaca;
+}
